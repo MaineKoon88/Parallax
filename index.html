@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Mundial FIFA 2022</title>
+    <link rel="shortcut icon" href="img/qatar.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -13,29 +14,184 @@
   </head>
   <body>
     <header>
-<nav class="navMenu">
-  <a href="#">Inicio</a>
-  <a href="#">Galeria</a>
+<nav class="navMenu" id="Home">
+  <a href="#Home">Inicio</a>
+  <a href="#fixture">Fixture</a>
+  <a href="#GaleriaPrs">Seleccionados</a>
   <a href="#">Partidos</a>
+  <a href="vivo.html">en Vivo</a>
   <a href="#">Contacto</a>
-  
+
 </nav>
     </header>
 
-    <div class="parallax"></div>
+    <div class="parallax">
+
+      <div class="announcement">
+          <p style="font-size:20px">Brasil <span style="color:orange; font-size:25px">Vs</span> Serbia &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="vivo.html">Ver Partido ></a></p>
+        </div>
+        <br>
+<h1 style="color:orange">Argentina juega dentro de</h1>
+<div class="timer">
+<p id="demo"></p>
+
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 26, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    </div>
 
         <div class="txt1">
     <p>Comienza la <span>Copa del Mundo</span></p>
 
 
     </div>
-    <div class="parallax2"></div>
+    <div class="parallax2"><img src="fixture.jpg" alt="fixture" id="fixture"></div>
+
         <div class="txt2">
-    <p></p>
+
 
 
     </div>
+    <div class="txt3">
 
+
+
+
+    </div>
+    <div class="parallax3">
+<br>
+
+<h3 id="GaleriaPrs">Seleccionados</h3>
+<br>
+
+
+<h1>Grupo C </h1>
+    <!--Tarjeta 1-->
+    <div class="cards">
+
+
+
+        <div class="card">
+          <div class="image-container">
+            <img src="img/afa.png" alt="logo AFA">
+        </div>
+          <div class="card-footer">
+            <span>Asociacion Futbol Argentino</span>
+            <h3><span style="color:orange; font-size:35px; text-transform:uppercase" >A</span>FA</h3>
+<br>
+<br>
+            <a href="argentina.html" class="read-more">Entrar <span>&rarr;</span></a>
+          </div>
+        </div>
+
+    <!-- Tarjeta 2 -->
+
+        <div class="card2">
+          <div class="image-container2">
+            <img src="img/KSA.png" alt="Arabia Saudita Logo">
+
+          </div>
+          <div class="card-footer2">
+            <span>Saudi National Football Team</span>
+            <h3><span style="color:orange; font-size:35px;text-transform:uppercase ">K</span>SA</h3>
+<br>
+<br>
+
+            <a href="#" class="read-more">Entrar <span>&rarr;</span></a>
+          </div>
+        </div>
+
+    <!-- Tarjeta 3 -->
+
+    <div class="card3">
+      <div class="image-container3">
+        <img src="img/mx.png" alt="Seleccion Mexico">
+
+      </div>
+      <div class="card-footer3">
+        <span>Federacion Mexicana de Futbol</span>
+        <h3><span style="color:orange; font-size:35px;text-transform:uppercase ">F</span>MF</h3>
+        <br>
+        <br>
+        <a href="#" class="read-more">Entrar <span>&rarr;</span></a>
+      </div>
+    </div>
+
+
+<!-- Tarjeta 4 -->
+<div class="card4">
+  <div class="image-container4">
+    <img src="img/pzpn.png" alt="Seleccion Polonia">
+</div>
+  <div class="card-footer4">
+    <span>Polski Związek Piłki Nożnej</span>
+    <h3><span style="color:orange; font-size:35px; text-transform:uppercase" >P</span>ZPN</h3>
+    <br>
+    <br>
+
+    <a href="#" class="read-more">Entrar <span>&rarr;</span></a>
+  </div>
+</div>
+
+
+
+
+</div>
+<h1>Grupo D </h1>
+<div class="cards">
+
+<!-- Tarjeta 4 -->
+<div class="card4">
+  <div class="image-container4">
+    <img src="img/pzpn.png" alt="Seleccion Polonia">
+</div>
+  <div class="card-footer4">
+    <span>Polski Związek Piłki Nożnej</span>
+    <h3><span style="color:orange; font-size:35px; text-transform:uppercase" >P</span>ZPN</h3>
+    <br>
+    <br>
+
+    <a href="#" class="read-more">Entrar <span>&rarr;</span></a>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+</div>
 
 <footer>
   <div class="foot">
