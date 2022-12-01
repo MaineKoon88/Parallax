@@ -1,0 +1,327 @@
+html {
+
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+
+}
+html:: -webkit-scrollbar{
+  width: .8rem;
+}
+html:: -webkit-scrollbar-track{
+  background: transparent;
+}
+html:: -webkit-scrollbar-thumb{
+  width: #fff;
+  border-radius: 5rem;
+}
+*{
+margin: 0;
+padding:0;
+font-family: 'MyWebFont';
+}
+
+/*Fuentes*/
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('fonts/medium.otf') format('otf'),
+       url('fonts/bold.ttf') format('ttf'),
+       url('fonts/heavy.ttf') format('truetype');
+}
+
+
+.parallax3 {
+  /* The image used */
+  background-image: url("img/stadium.jpg");
+
+  /* Set a specific height */
+  min-height: 1700px;
+  width: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.navMenu{
+    font-family: 'MyWebFont';
+    top: 50%;
+
+    background-image: url("fondonav.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    height:50px;
+    width: auto;
+    padding-top: 20px;
+    padding-left: 150px;
+
+
+
+
+
+}
+
+.navMenu a{
+
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 150px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+
+
+
+
+header{
+background-color: rgba(211, 84, 0, 0.8);
+
+}
+
+
+.lista{
+  padding-top:  150px;
+  padding-bottom: 50px;
+  background: rgba(33, 47, 61, 0.6);
+}
+
+.lista a{
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+
+
+}
+
+.flag{
+  margin-left: 10px;
+  margin-right: 10px;
+width: 60px;
+height: 40px;
+border: 2px solid  #E9A318;
+border-color: ;
+}
+
+
+.foot p{
+background-color: #17202a;
+height: 300px;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+
+font-family: 'MyWebFont';
+color:#fff;
+}
+
+
+footer{
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+
+    color: #fff;
+}
+
+
+
+/*Galeria*/
+#GaleriaPrs{
+
+text-align: center;
+color: orange;
+font-size: 50px;
+text-shadow: 6px;
+padding-top: 40px;
+
+}
+
+.escudo1{
+
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+
+
+}
+
+iframe{
+
+margin-left: 280px;
+margin-top: 40px;
+margin-bottom: 40px;
+
+}
+
+.prediccion{
+  display: inline-block;
+/*
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+*/
+font-size: 30px;
+margin-left: 250px;
+
+
+}
+
+.prediccion .uru{
+text-align: center;
+width: 80px;
+margin-left: 20px;
+margin-right: 160px;
+height: 80px;
+border-style: solid black;
+border-radius: 10px;
+
+
+}
+/*
+.prediccion .cor{
+text-align: center;
+width: 80px;
+
+margin-right: 40px;
+height: 80px;
+border-style: solid black;
+border-radius: 10px;
+
+}
+*/
+
+.prediccion2{
+  display: inline-block;
+/*
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+*/
+font-size: 30px;
+margin-left: 190px;
+
+}
+
+.prediccion2 .cor{
+text-align: center;
+width: 80px;
+margin-left: 20px;
+margin-right: 80px;
+height: 80px;
+border-style: solid black;
+border-radius: 10px;
+
+}
+
+.VS{
+text-align: center;
+margin-right:150px;
+
+}
+
+
+
+
+
+.predic{
+
+text-align: center;
+margin-right: 30px;
+}
+
+.names{
+  display:inline-block;
+
+  width: 100px;
+  margin-left: 400px;
+  margin-right: 20px;
+
+}
+
+.names2{
+  display: inline-block;
+  width: 100px;
+  margin-left: 100px;
+
+
+
+}
+
+.names3{
+  display: inline-block;
+  width: 100px;
+  margin-left: 100px;
+
+
+
+}
+
+
+
+
+.names .nam{
+
+  border-radius: 5px;
+  margin-top: 40px
+}
+
+.names2 .num{
+  margin-top: 40px;
+  border-radius: 10px;
+  width: 50px;
+  margin-left: 20px;
+  background:#2E4053;
+  text-align: center;
+  color:#D35400;
+  text-align: center;
+}
+
+.names3 .num{
+  margin-top: 40px;
+  border-radius: 10px;
+  width: 50px;
+  margin-left: 20px;
+  background:#2E4053;
+  text-align: center;
+  color:#D35400;
+  text-align: center;
+
+}
+
+.referee{
+  margin-left: 10px;
+
+
+}
+
+
+
+.result{
+
+margin-top: 80px;
+
+}

@@ -1,0 +1,749 @@
+html {
+
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+
+}
+html:: -webkit-scrollbar{
+  width: .8rem;
+}
+html:: -webkit-scrollbar-track{
+  background: transparent;
+}
+html:: -webkit-scrollbar-thumb{
+  width: #fff;
+  border-radius: 5rem;
+}
+*{
+margin: 0;
+padding:0;
+font-family: 'MyWebFont';
+}
+
+/*Fuentes*/
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('fonts/medium.otf') format('otf'),
+       url('fonts/bold.ttf') format('ttf'),
+       url('fonts/heavy.ttf') format('truetype');
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("fondo1.jpg");
+
+
+  /* Set a specific height */
+  min-height: 1000px;
+  margin: 0;
+  padding: 0;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("fondo3.png");
+
+  /* Set a specific height */
+  min-height: 1000px;
+  width: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("soccer.jpg");
+
+  /* Set a specific height */
+  min-height: 1100px;
+  width: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.navMenu{
+    font-family: 'MyWebFont';
+    top: 50%;
+
+    background-image: url("fondonav.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    height:50px;
+    width: auto;
+    padding-top: 20px;
+    padding-left: 150px;
+
+
+
+
+
+}
+
+.navMenu a{
+
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 150px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+
+
+
+
+header{
+background-color: rgba(211, 84, 0, 0.8);
+
+}
+
+.txt1{
+
+display: flex;
+align-items: center;
+justify-content:center;
+font-family: 'MyWebFont';
+font-size: 90px;
+font-weight: bold;
+color:#D35400;
+background-image: url("logo.jpg");
+background-repeat: no-repeat;
+background-position: center;
+height: 500px;
+box-shadow: 0 -10px 20px 4px white, 0 20px 4px -7px white;
+
+
+
+
+}
+
+.txt2{
+
+display: flex;
+align-items: center;
+justify-content:center;
+font-family: 'Oswald', sans-serif;
+font-size: 90px;
+font-weight: bold;
+
+
+
+}
+
+.txt3{
+
+display: flex;
+align-items: center;
+justify-content:center;
+background-image: url("banner.jpg");
+background-color: #900C3F;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 900px ;
+height: 400px;
+box-shadow: 0 -15px 20px -8px  white, 0 7px 20px -1px white;
+
+
+
+
+}
+
+
+.foot p{
+background-color: #17202a;
+height: 300px;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+font-family: 'MyWebFont';
+color:#fff;
+}
+
+
+footer{
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+
+    color: #fff;
+}
+
+
+#fixture{
+
+height: auto;
+width: auto;
+display: grid;
+align-items: center;
+padding-left: 180px;
+padding-top: 150px;
+}
+
+
+
+
+
+
+
+*::before
+*::after
+
+::selection{
+  background: #B479F7;
+  color: #fff;
+}
+
+.cards {
+  margin: 10px;
+  padding: 0;
+  padding-top: 35px;
+  font-size: 5px;
+  color: #fff;
+  display:grid;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  grid-auto-flow: column;
+  height:100vh;
+
+
+
+
+
+
+
+}
+
+
+
+
+/*Tarjeta 1*/
+
+.card {
+  max-width: 300px;
+  background: #1e2529;
+  border: 2px solid #343637;
+  position: relative;
+  max-height: 405px;
+
+
+}
+
+.card .image-container{
+  width: 100%;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .image-container::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background:  #40BDF3;
+  mix-blend-mode: multiply;
+  transform: translateX(-120%)
+    skewX(-10deg);
+    transition: transform 0.3s ease-out;
+
+}
+
+.card-footer {
+  padding: 2rem 2rem 3.5rem 2rem;
+  color: rgb(236, 232, 225);
+  transition: all 0.3s ease;
+
+}
+
+.card-footer h3{
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: 'MyWebFont';
+
+}
+
+.card-footer span{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #5a6469;
+
+}
+
+.card-footer p {
+  font-size: 1rem;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.read-more{
+  font-weight: 500;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.read-more span{
+  display: block;
+  margin-left: 0.4rem;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.card:hover .read-more{
+  color: rgb(56, 62, 58);
+}
+
+.card:hover .read-more span{
+  transform: translateX(5px);
+}
+
+.card:hover .image-container::before{
+  transform: translateX(0)
+             skewX(-10deg)
+             scaleX(1.3);
+}
+
+.card:hover .card-footer{
+  background: #ffffff;
+  color: rgb(56, 62, 58);
+}
+
+.card:hover span{
+  color: #40BDF3;
+}
+
+.card::before{
+  content: "";
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(to right, #40BDF3 50%, #383e3a 50%);
+  background-size: 200%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  transition: all 0.5s;
+}
+
+.card:hover::before{
+  background-position: 0%;
+}
+
+/*Tarjeta 2 */
+
+
+.card2 {
+  max-width: 300px;
+  background: #1e2529;
+  border: 2px solid #343637;
+  position: relative;
+  max-height: 405px;
+
+
+}
+
+.card2 .image-container2{
+  width: 100%;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card2 .image-container2::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background:  #40BDF3;
+  mix-blend-mode: multiply;
+  transform: translateX(-120%)
+    skewX(-10deg);
+    transition: transform 0.3s ease-out;
+
+}
+
+.card-footer2 {
+  padding: 2rem 2rem 3.5rem 2rem;
+  color: rgb(236, 232, 225);
+  transition: all 0.3s ease;
+
+}
+
+.card-footer2 h3{
+  font-size: 2rem;
+  font-weight: 500;
+
+}
+
+.card-footer2 span{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #5a6469;
+}
+
+.card-footer2 p {
+  font-size: 1rem;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.read-more{
+  font-weight: 500;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.read-more span{
+  display: block;
+  margin-left: 0.4rem;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.card2:hover .read-more{
+  color: rgb(56, 62, 58);
+}
+
+.card2:hover .read-more span{
+  transform: translateX(5px);
+}
+
+.card2:hover .image-container2::before{
+  transform: translateX(0)
+             skewX(-10deg)
+             scaleX(1.3);
+}
+
+.card2:hover .card-footer2{
+  background: #ffffff;
+  color: rgb(56, 62, 58);
+}
+
+.card2:hover span{
+  color: #40BDF3;
+}
+
+.card2::before{
+  content: "";
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(to right, #40BDF3 50%, #383e3a 50%);
+  background-size: 200%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  transition: all 0.5s;
+}
+
+.card2:hover::before{
+  background-position: 0%;
+}
+
+/*Tarjeta 3 */
+
+.card3 {
+  max-width: 300px;
+  background: #1e2529;
+  border: 2px solid #343637;
+  position: relative;
+  max-height: 405px;
+
+
+}
+
+.card3 .image-container3{
+  width: 100%;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card3 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card3 .image-container3::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background:  #40BDF3;
+  mix-blend-mode: multiply;
+  transform: translateX(-120%)
+    skewX(-10deg);
+    transition: transform 0.3s ease-out;
+
+}
+
+.card-footer3 {
+  padding: 2rem 2rem 3.5rem 2rem;
+  color: rgb(236, 232, 225);
+  transition: all 0.3s ease;
+
+}
+
+.card-footer3 h3{
+  font-size: 2rem;
+  font-weight: 500;
+
+}
+
+.card-footer3 span{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #5a6469;
+}
+
+.card-footer3 p {
+  font-size: 1rem;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.read-more{
+  font-weight: 500;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.read-more span{
+  display: block;
+  margin-left: 0.4rem;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.card3:hover .read-more{
+  color: rgb(56, 62, 58);
+}
+
+.card3:hover .read-more span{
+  transform: translateX(5px);
+}
+
+.card3:hover .image-container3::before{
+  transform: translateX(0)
+             skewX(-10deg)
+             scaleX(1.3);
+}
+
+.card3:hover .card-footer3{
+  background: #ffffff;
+  color: rgb(56, 62, 58);
+}
+
+.card3:hover span{
+  color: #40BDF3;
+}
+
+.card3::before{
+  content: "";
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(to right, #40BDF3 50%, #383e3a 50%);
+  background-size: 200%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  transition: all 0.5s;
+}
+
+.card3:hover::before{
+  background-position: 0%;
+}
+
+
+
+/*Tarjeta 4 */
+
+.card4 {
+  max-width: 300px;
+  background: #1e2529;
+  border: 2px solid #343637;
+  position: relative;
+  max-height: 405px;
+
+
+}
+
+.card4 .image-container4{
+  width: 100%;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card4 img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  image-resolution: from-image;
+}
+
+.card4 .image-container4::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background:  #40BDF3;
+  mix-blend-mode: multiply;
+  transform: translateX(-120%)
+    skewX(-10deg);
+    transition: transform 0.3s ease-out;
+
+}
+
+.card-footer4 {
+  padding: 2rem 2rem 3.5rem 2rem;
+  color: rgb(236, 232, 225);
+  transition: all 0.3s ease;
+
+}
+
+.card-footer4 h3{
+  font-size: 2rem;
+  font-weight: 500;
+
+}
+
+.card-footer4 span{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #5a6469;
+}
+
+.card-footer4 p {
+  font-size: 1rem;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.read-more{
+  font-weight: 500;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.read-more span{
+  display: block;
+  margin-left: 0.4rem;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.card4:hover .read-more{
+  color: rgb(56, 62, 58);
+}
+
+.card4:hover .read-more span{
+  transform: translateX(5px);
+}
+
+.card4:hover .image-container4::before{
+  transform: translateX(0)
+             skewX(-10deg)
+             scaleX(1.3);
+}
+
+.card4:hover .card-footer4{
+  background: #ffffff;
+  color: rgb(56, 62, 58);
+}
+
+.card4:hover span{
+  color: #40BDF3;
+}
+
+.card4::before{
+  content: "";
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(to right, #40BDF3 50%, #383e3a 50%);
+  background-size: 200%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  transition: all 0.5s;
+}
+
+.card4:hover::before{
+  background-position: 0%;
+}
+
+/*Galeria*/
+#GaleriaPrs{
+
+text-align: center;
+color: orange;
+font-size: 50px;
+text-shadow: 6px;
+padding-top: 40px;
+
+}

@@ -1,0 +1,256 @@
+html {
+
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+
+}
+html:: -webkit-scrollbar{
+  width: .8rem;
+}
+html:: -webkit-scrollbar-track{
+  background: transparent;
+}
+html:: -webkit-scrollbar-thumb{
+  width: #fff;
+  border-radius: 5rem;
+}
+*{
+margin: 0;
+padding:0;
+font-family: 'MyWebFont';
+}
+
+/*Fuentes*/
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('fonts/medium.otf') format('otf'),
+       url('fonts/bold.ttf') format('ttf'),
+       url('fonts/heavy.ttf') format('truetype');
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("img/players.jpg");
+
+
+  /* Set a specific height */
+  min-height: 1300px;
+  margin: 0;
+  padding: 0;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.navMenu{
+    font-family: 'MyWebFont';
+    top: 50%;
+
+    background-image: url("fondonav.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    height:50px;
+    width: auto;
+    padding-top: 20px;
+    padding-left: 150px;
+
+
+
+
+
+}
+
+.navMenu a{
+
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 150px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+
+
+
+
+header{
+background-color: rgba(211, 84, 0, 0.8);
+
+}
+
+
+
+
+.foot p{
+background-color: #17202a;
+height: 300px;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+font-family: 'MyWebFont';
+color:#fff;
+}
+
+
+footer{
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+
+    color: #fff;
+}
+
+
+
+
+
+
+
+*::before
+*::after
+
+::selection{
+  background: #B479F7;
+  color: #fff;
+}
+
+
+/*Galeria*/
+#GaleriaPrs{
+
+text-align: center;
+color: orange;
+font-size: 50px;
+text-shadow: 6px;
+padding-top: 80px;
+
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 400px;
+  transform: translate(-50%,-50%);
+  width: 1000px;
+  display: flex;
+  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+}
+
+.wrapper .left{
+  width: 50%;
+  background: linear-gradient(to top,  #0b97d8 ,  #09618a );
+  padding: 30px 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper .left img{
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+}
+
+.wrapper .left h4{
+  margin-bottom: 10px;
+}
+
+.wrapper .left p{
+  font-size: 12px;
+}
+
+.wrapper .right{
+  width: 80%;
+  background: #fff;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wrapper .right .info,
+.wrapper .right .projects{
+  margin-bottom: 25px;
+}
+
+.wrapper .right .info h3,
+.wrapper .right .projects h3{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapper .right .info_data,
+.wrapper .right .projects_data{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .right .info_data .data,
+.wrapper .right .projects_data .data{
+  width: 75%;
+}
+
+.wrapper .right .info_data .data h4,
+.wrapper .right .projects_data .data h4{
+    color: #353c4e;
+    margin-bottom: 5px;
+}
+
+.wrapper .right .info_data .data p,
+.wrapper .right .projects_data .data p{
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #919aa3;
+}
+
+.wrapper .social_media ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .social_media ul li{
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(to right,#01a9ac,#01dbdf);
+  margin-right: 19px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 45px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.wrapper .social_media ul li a{
+  color :#fff;
+  display: block;
+  font-size: 18px;
+}
